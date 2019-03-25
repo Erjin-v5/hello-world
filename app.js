@@ -30,13 +30,13 @@ var weather = '';
 
 app.use(express.static(__dirname + '/public'));
 
-app.use((request, response, next) => {
+/*app.use((request, response, next) => {
 	response.render('maintenance.hbs', {
 		title: 'Maintenance page',
 		welcome: 'Hello!'
 	})
 	//next();
-});
+});*/
 
 app.get('/', (request, response) => {
 	response.render('home.hbs', {
